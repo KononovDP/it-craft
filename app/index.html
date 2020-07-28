@@ -15,46 +15,133 @@
 
     <!-- HEADER -->
     <header class="header">
-      <a href="#" class="header__logo for__img">
-        <img src="images/dest/logo.png" alt="SuperPoint logo"> 
-      </a>
-      <a href="#" class="header__link">
-        <svg class="header__link__icon icon">
-          <use xlink:href="images/dest/icons/sprite.svg#feedback"></use>
-        </svg>
-        <span class="header__link__text">Feedback</span>
-      </a>
-      <a href="#" class="header__link">
-        <svg class="header__link__icon icon">
-          <use xlink:href="images/dest/icons/sprite.svg#help"></use>
-        </svg>
-        <span class="header__link__text">Help</span>
-      </a>
-
-      <div class="header__account dropdown">
-        <button 
-          id="dropdownMenu" 
-          class="dropdown__header" 
-          aria-expanded="false" 
-          aria-haspopup="true">
-          <span class="dropdown__text">John Johnson</span>
-          <svg class="dropdown__icon icon">
-            <use xlink:href="images/dest/icons/sprite.svg#arrow-down"></use>
+      <div class="header__inner">
+        <a href="#" class="header__logo for__img">
+          <img src="images/dest/logo.png" alt="SuperPoint logo"> 
+        </a>
+        <a href="#" class="header__link">
+          <svg class="header__link__icon icon">
+            <use xlink:href="images/dest/icons/sprite.svg#feedback"></use>
           </svg>
-          <span class="dropdown__img for__img">
-            <img src="images/dest/logo-img.png" alt="">
-          </span>
-        </button>
-        <nav class="dropdown__body" aria-labelledby="dropdownMenu">
-          <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="#" class="dropdown__link">Dropdown 1</a></li>
-            <li class="dropdown__item"><a href="#" class="dropdown__link">Dropdown 2</a></li>
-            <li class="dropdown__item"><a href="#" class="dropdown__link">Dropdown 3</a></li>
-          </ul>
-        </nav>
+          <span class="header__link__text">Feedback</span>
+        </a>
+        <a href="#" class="header__link">
+          <svg class="header__link__icon icon">
+            <use xlink:href="images/dest/icons/sprite.svg#help"></use>
+          </svg>
+          <span class="header__link__text">Help</span>
+        </a>
+
+        <div class="header__account dropdown">
+          <button 
+            id="dropdownMenu" 
+            class="dropdown__header" 
+            aria-expanded="false" 
+            aria-haspopup="true">
+            <span class="dropdown__text">John Johnson</span>
+            <svg class="dropdown__icon icon">
+              <use xlink:href="images/dest/icons/sprite.svg#arrow-down"></use>
+            </svg>
+            <span class="dropdown__img for__img">
+              <img src="images/dest/logo-img.png" alt="">
+            </span>
+          </button>
+          <nav class="dropdown__body" aria-labelledby="dropdownMenu">
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a href="#" class="dropdown__link">Dropdown 1</a></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link">Dropdown 2</a></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link">Dropdown 3</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header> 
     <!-- HEADER END -->
+
+    <div class="site">
+
+      <!-- ASIDE -->
+      <aside class="sidebar">
+        <div class="sidebar__action">
+          <button 
+            class="sidebar__burger" 
+            id="menu-button"
+            aria-haspopup="true"
+            aria-controls="sidebar-menu">
+            <svg class="sidebar__burger__icon icon">
+              <use xlink:href="images/dest/icons/sprite.svg#arrow-left"></use>
+            </svg>
+            <svg class="sidebar__burger__icon icon">
+              <use xlink:href="images/dest/icons/sprite.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+
+        <nav 
+          class="sidebar__nav" 
+          id="sidebar-menu"
+          aria-labelledby="menu-button">
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link sidebar__link--active">
+                <svg class="sidebar__link__icon icon">
+                  <use xlink:href="images/dest/icons/sprite.svg#filter"></use>
+                </svg>
+                <span class="sidebar__link__text">Point 1</span>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link sidebar__link--active">
+                <svg class="sidebar__link__icon icon">
+                  <use xlink:href="images/dest/icons/sprite.svg#pin"></use>
+                </svg>
+                <span class="sidebar__link__text">Point 2</span>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link sidebar__link--active">
+                <svg class="sidebar__link__icon icon">
+                  <use xlink:href="images/dest/icons/sprite.svg#statistics"></use>
+                </svg>
+                <span class="sidebar__link__text">Point 3</span>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link sidebar__link--active">
+                <svg class="sidebar__link__icon icon">
+                  <use xlink:href="images/dest/icons/sprite.svg#money"></use>
+                </svg>
+                <span class="sidebar__link__text">Point 4</span>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link sidebar__link--active">
+                <svg class="sidebar__link__icon icon">
+                  <use xlink:href="images/dest/icons/sprite.svg#notebook"></use>
+                </svg>
+                <span class="sidebar__link__text">Point 5</span>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link sidebar__link--active">
+                <svg class="sidebar__link__icon icon">
+                  <use xlink:href="images/dest/icons/sprite.svg#list"></use>
+                </svg>
+                <span class="sidebar__link__text">Point 6</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- ASIDE END -->
+
+      <!-- MAIN -->
+      <main class="main">
+
+      </main>
+      <!-- MAIN END-->
+
+    </div>
 
   </div>
   

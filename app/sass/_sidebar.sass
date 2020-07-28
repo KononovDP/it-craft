@@ -1,0 +1,52 @@
+.sidebar
+  position: fixed
+  left: 0
+  width: 160px
+  height: 100%
+  background-color: map-get($bg-colors, white)
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
+  z-index: 90 
+  transition: all .3s
+  &__action
+    display: flex
+  &__burger
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: auto
+    padding: 10px
+    background-color: transparent
+    border: none
+    cursor: pointer
+    .icon
+      fill: map-get($text-colors, secondary)
+  &__link
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    height: 42px
+    padding: 10px 13px 10px 15px
+    border-right: 2px solid transparent
+    +font-size(16)
+    +line-height(24)
+    color: map-get($text-colors, grey-light)
+    transition: all .3s
+    &:hover
+      border-right-color: map-get($bg-colors, secondary)
+      color: map-get($text-colors, secondary)
+      .sidebar__link__icon
+        fill: map-get($text-colors, secondary)
+    &__icon
+      fill: map-get($text-colors, grey)
+    &__text
+      margin-left: 10px
+
+.sidebar--active
+  width: auto
+  .sidebar
+    &__burger
+      transform: rotate(180deg)
+    &__link
+      &__text
+        display: none

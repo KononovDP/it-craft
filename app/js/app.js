@@ -12,6 +12,17 @@ $(document).ready(function() {
       $(this).attr('aria-expanded', true)
     }
 
+  });
+
+  const setAsideOffset = function() {
+    const headerHeight = $('.header').height();
+    $('.sidebar').css('top', headerHeight + 'px');
+  };
+  setAsideOffset();
+
+  $('.sidebar__burger').on('click', function(e) {
+    e.preventDefault();
+    $(this).closest('.sidebar').toggleClass('sidebar--active')
   })
 
 })
