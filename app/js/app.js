@@ -14,11 +14,12 @@ $(document).ready(function() {
 
   });
 
-  const setAsideOffset = function() {
+  const setOffsets = function() {
     const headerHeight = $('.header').height();
     $('.sidebar').css('top', headerHeight + 'px');
+    $('.main').css('paddingTop', headerHeight + 'px');
   };
-  setAsideOffset();
+  setOffsets();
 
   $('.sidebar__burger').on('click', function(e) {
     e.preventDefault();

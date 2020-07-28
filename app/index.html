@@ -61,18 +61,16 @@
     <div class="site">
 
       <!-- ASIDE -->
-      <aside class="sidebar">
+      <aside class="sidebar sidebar--active">
         <div class="sidebar__action">
           <button 
             class="sidebar__burger" 
             id="menu-button"
             aria-haspopup="true"
-            aria-controls="sidebar-menu">
+            aria-controls="sidebar-menu"
+            aria-label="Toggle menu button">
             <svg class="sidebar__burger__icon icon">
               <use xlink:href="images/dest/icons/sprite.svg#arrow-left"></use>
-            </svg>
-            <svg class="sidebar__burger__icon icon">
-              <use xlink:href="images/dest/icons/sprite.svg#menu"></use>
             </svg>
           </button>
         </div>
@@ -137,7 +135,51 @@
 
       <!-- MAIN -->
       <main class="main">
-
+        <div class="stepper">
+          <ol class="stepper__list">
+            <li class="stepper__item stepper__item--complited">
+              <span class="stepper__item__text">
+                Step
+              </span>
+              <span class="stepper__item__icon">
+                <svg class="icon">
+                  <use xlink:href="images/dest/icons/sprite.svg#list"></use>
+                </svg>
+              </span>
+            </li>
+            <li class="stepper__item stepper__item--complited">
+              <span class="stepper__item__text">
+                Step
+              </span>
+              <span class="stepper__item__icon">
+                <svg class="icon">
+                  <use xlink:href="images/dest/icons/sprite.svg#delivery"></use>
+                </svg>
+              </span>
+            </li>
+            <li class="stepper__item stepper__item--active">
+              <span class="stepper__item__text">
+                Step
+              </span>
+              <span class="stepper__item__icon">
+                <svg class="icon">
+                  <use xlink:href="images/dest/icons/sprite.svg#checkbox"></use>
+                </svg>
+              </span>
+            </li>
+            <li class="stepper__item">
+              <span class="stepper__item__text">
+                Step
+              </span>
+              <span class="stepper__item__icon">
+                <svg class="icon">
+                  <use xlink:href="images/dest/icons/sprite.svg#receipt"></use>
+                </svg>
+              </span>
+            </li>
+          </ol>
+          <div class="stepper__body"></div>
+        </div>
       </main>
       <!-- MAIN END-->
 
