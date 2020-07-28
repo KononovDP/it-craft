@@ -1,0 +1,51 @@
+*
+  outline: none
+  box-sizing: border-box
+
+body
+  +font-size(23)
+  +line-height(32)
+
+h1
+  margin: 35px 0
+
+a
+  text-decoration: none
+
+.hidden
+  display: none!important
+
+.text-overflow
+  display: inline-block
+  width: 100%
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+.visually-hidden
+  position: absolute
+  white-space: nowrap
+  width: 1px
+  height: 1px
+  overflow: hidden
+  border: 0
+  padding: 0
+  clip: rect(0, 0, 0, 0)
+
+.wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 100%
+  max-width: 1920px
+  min-height: 100vh
+  background: #fff
+  overflow: hidden
+
+.container
+  position: relative
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 20px
+ 
