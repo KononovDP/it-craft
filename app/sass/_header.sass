@@ -1,0 +1,28 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  align-items: center
+  width: 100%
+  padding: 10px 10px 10px 10px
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.15)  
+  &__logo
+    display: flex
+    margin-right: auto
+  &__link
+    display: flex
+    align-items: center
+    margin-right: 35px
+    color: map-get($text-colors, gery-light)
+    transition: all .3s
+    &__icon
+      margin-right: 10px
+      fill: map-get($text-colors, gery-light)
+      transition: all .3s
+    &:hover
+      color: map-get($text-colors, secondary)  
+      .header__link__icon  
+        fill: map-get($text-colors, secondary)  
+  &__dropdown
+    margin-left: 

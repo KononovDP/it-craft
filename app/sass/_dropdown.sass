@@ -1,0 +1,33 @@
+.dropdown
+  position: relative
+  color: map-get($text-colors, grey)
+  &__header
+    display: flex
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+  &__text
+    margin-right: 10px
+  &__icon
+    margin-right: 8px
+  &__img
+    display: flex
+  &__body
+    position: absolute
+    top: 100%
+    right: 0
+    display: none
+    min-width: 100%
+    margin-top: 10px
+    background-color: map-get($bg-colors, white)
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.15) 
+  &__link
+    display: block
+    padding: 5px 10px
+    color: inherit
+
+.dropdown--active
+  .dropdown
+    &__body
+      display: block

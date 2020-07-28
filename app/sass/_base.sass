@@ -1,16 +1,24 @@
 *
   outline: none
   box-sizing: border-box
+  &:focus
+    box-shadow: 0 0 3px 1px map-get($bg-colors, primary)
 
 body
-  +font-size(23)
-  +line-height(32)
+  font-family: 'Assistant', sans-serif
+  +font-size(14)
+  +line-height(20)
+  color: map-get($text-colors, gery)
 
 h1
   margin: 35px 0
 
 a
   text-decoration: none
+
+.icon
+  width: 1rem
+  height: 1rem
 
 .hidden
   display: none!important
@@ -31,6 +39,13 @@ a
   border: 0
   padding: 0
   clip: rect(0, 0, 0, 0)
+
+.for-img
+  text-align: center
+  img
+    max-width: 100%
+    max-height: 100%
+    height: auto
 
 .wrapper
   position: relative
