@@ -1,0 +1,25 @@
+.button
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  height: 40px
+  min-width: 220px
+  padding: 0 20px
+  background-color: #eeaa79
+  border: none
+  border-radius: 2px
+  text-align: center
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.15)
+  +font-size(16)
+  +line-height(24)
+  color: map-get($text-colors, white)
+  text-transform: uppercase
+  cursor: pointer
+  transition: all .3s
+  &:hover
+    box-shadow: none
+  &:focus
+    box-shadow: 0 0 3px 1px map-get($bg-colors, primary)
+  &:disabled
+    opacity: 0.5
+    pointer-events: none
