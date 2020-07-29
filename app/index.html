@@ -6,7 +6,8 @@
 	<title>Project Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/app.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
@@ -178,60 +179,481 @@
               </span>
             </li>
           </ol>
-          <div class="stepper__body form">
-            
-            <div class="form__group">
-              <input type="text" class="form__input">
-              <label class="form__label">Company Autocomplete</label>
-            </div>
-            
-            <div class="form__group">
-              <select class="form__select">
-                <option value="one">One</option>
-                <option value="one">One</option>
-                <option value="one">One</option>
-              </select>
-              <label class="form__label">Company Autocomplete</label>
-            </div>
-
-            
-            <div class="form__group">
-              <select class="form__select">
-                <option value="one">two</option>
-                <option value="one">One</option>
-                <option value="one">One</option>
-              </select>
-              <label class="form__label">Company Autocomplete</label>
-            </div>
-
-            <form class="form__group form-with-btn">
-              <input type="text" class="form__input">
-              <label class="form__label">Company Autocomplete</label>
-              <button type="submit" class="form__button__icon">
-                <svg class="icon">
-                  <use xlink:href="images/dest/icons/sprite.svg#search"></use>
-                </svg>
-              </button>
-            </form>
-
-            <div class="form__group">
-              <div class="form__tooltip">
-                <span class="form__tooltip__control" tabindex="0">?</span>
-                <div class="form__tooltip__body">Some text</div>
+          <div class="stepper__body">
+            <section class="section">
+              <h2 class="section__title">Shipper Details</h2>
+              <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <form class="form__group form-with-btn">
+                    <input type="text" class="form__input">
+                    <label class="form__label">Company Autocomplete</label>
+                    <button type="submit" class="form__button__icon">
+                      <svg class="icon">
+                        <use xlink:href="images/dest/icons/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="form__group">
+                    <input type="text" class="form__input">
+                    <label class="form__label">Company Name</label>
+                  </div>
+                </div>
               </div>
-            </div>
-            
-            <div class="form__group">
-              <label class="form__checkbox">
-                <input type="checkbox" class="visually-hidden">
-                <div class="form__checkbox__text">I agree to the <a href="google.com"> Terms and Conditions</a></div>
-              </label>
-            </div>
+            </section>
+            <section class="section">
+              <h2 class="section__title">Shipment Details</h2>
+              <div class="shipment__detail">
+                <div class="desktop-only">
+                  <table>
+                    <tr>
+                      <th>Handling Unit Type (H/U)</th>
+                      <th># of H/U</th>
+                      <th>H/U Dimensions</th>
+                      <th>Stackable</th>
+                      <th>Commodity Descriprion</th>
+                      <th style="width: 50px;">NMFC </th>
+                      <th>Class</th>
+                      <th># of Pieces</th>
+                      <th>Total Weight</th>
+                      <th>HazMat</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="3" style="vertical-align: top;">Pallets</td>
+                      <td rowspan="3" style="vertical-align: top;">3</td>
+                      <td rowspan="3" style="vertical-align: top;">15 х 25 х 23 in</td>
+                      <td rowspan="3" style="vertical-align: top;">Yes</td>
+                      <td>
+                        <form class="form__group form-with-btn">
+                          <input type="text" class="form__input">
+                          <button type="submit" class="form__button__icon">
+                            <svg class="icon">
+                              <use xlink:href="images/dest/icons/sprite.svg#search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </td>
+                      <td>
+                        <div class="form__group">
+                          <input type="text" class="form__input">
+                          <label class="form__label">NMFC</label>
+                        </div>
+                      </td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>400 lbs</td>
+                      <td>
+                        <div class="form__group">
+                          <label class="form__checkbox">
+                            <input type="checkbox" class="visually-hidden">
+                            <div class="form__checkbox__text"></div>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border-bottom">
+                        <form class="form__group form-with-btn">
+                          <input type="text" class="form__input">
+                          <button type="submit" class="form__button__icon">
+                            <svg class="icon">
+                              <use xlink:href="images/dest/icons/sprite.svg#search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </td>
+                      <td class="border-bottom">
+                        <div class="form__group">
+                          <input type="text" class="form__input">
+                          <label class="form__label">NMFC</label>
+                        </div>
+                      </td>
+                      <td class="border-bottom">1</td>
+                      <td class="border-bottom">1</td>
+                      <td class="border-bottom">400 lbs</td>
+                      <td class="border-bottom">
+                        <div class="form__group">
+                          <label class="form__checkbox">
+                            <input type="checkbox" class="visually-hidden">
+                            <div class="form__checkbox__text"></div>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6">
+                        <div class="elements-wrap">
+                          <div class="elements-item">
+                            <div class="form__group">
+                              <select class="form__select">
+                                <option value="one">One</option>
+                                <option value="one">One</option>
+                                <option value="one">One</option>
+                              </select>
+                              <label class="form__label">UN</label>
+                            </div>
+                          </div>
+                          <div class="elements-item">
+                            <div class="form__group">
+                              <input type="text" class="form__input">
+                              <label class="form__label">UN Number</label>
+                            </div>
+                          </div>
+                          <div class="elements-item">
+                            <div class="form__group">
+                              <input type="text" class="form__input">
+                              <label class="form__label">Proper Shipping Name</label>
+                            </div>
+                          </div>
+                          <div class="elements-item">
+                            <div class="form__group">
+                              <input type="text" class="form__input">
+                              <label class="form__label">Hazard Class</label>
+                            </div>
+                            <div class="form__tooltip">
+                              <span class="form__tooltip__control" tabindex="0">?</span>
+                              <div class="form__tooltip__body">Some text</div>
+                            </div>
+                          </div>
+                          <div class="elements-item">
+                            <div class="form__group">
+                              <select class="form__select">
+                                <option value="one">One</option>
+                                <option value="one">One</option>
+                                <option value="one">One</option>
+                              </select>
+                              <label class="form__label">Packing Group</label>
+                            </div>
+                          </div>
+                          <div class="elements-item">
+                            <div class="form__group">
+                              <select class="form__select">
+                                <option value="one">One</option>
+                                <option value="one">One</option>
+                                <option value="one">One</option>
+                              </select>
+                              <label class="form__label">Packing Type</label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Pallets</td>
+                      <td>3</td>
+                      <td>15 х 25 х 23 in</td>
+                      <td>Yes</td>
+                      <td>
+                        <form class="form__group form-with-btn">
+                          <input type="text" class="form__input">
+                          <button type="submit" class="form__button__icon">
+                            <svg class="icon">
+                              <use xlink:href="images/dest/icons/sprite.svg#search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </td>
+                      <td>
+                        <div class="form__group">
+                          <input type="text" class="form__input">
+                          <label class="form__label">NMFC</label>
+                        </div>
+                      </td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>400 lbs</td>
+                      <td>
+                        <div class="form__group">
+                          <label class="form__checkbox">
+                            <input type="checkbox" class="visually-hidden">
+                            <div class="form__checkbox__text"></div>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>  
+                <div class="mobile-only">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-sm-3"><div class="card__label">Handling Unit Type (H/U)</div></div>
+                      <div class="col-sm-3"><div class="card__text">Pallets</div></div>
 
-            <button class="button" disabled>dispatch</button>
+                      <div class="col-sm-3"><div class="card__label"># of H/U</div></div>
+                      <div class="col-sm-3"><div class="card__text">3</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">H/U Dimensions</div></div>
+                      <div class="col-sm-3"><div class="card__text">15 х 25 х 23 in</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Stackable</div></div>
+                      <div class="col-sm-3"><div class="card__text">Yes</div></div>
+                      
+                      <div class="col-12"><hr></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Commodity Descriprion</div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <form class="form__group form-with-btn">
+                          <input type="text" class="form__input">
+                          <button type="submit" class="form__button__icon">
+                            <svg class="icon">
+                              <use xlink:href="images/dest/icons/sprite.svg#search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">NMFC </div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <div class="form__group">
+                          <input type="text" class="form__input">
+                          <label class="form__label">NMFC</label>
+                        </div>
+                      </div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Class</div></div>
+                      <div class="col-sm-3"><div class="card__text">1</div></div>
 
-            <a href="#" class="button">dispatch</a>
+                      <div class="col-sm-3"><div class="card__label"># of Pieces</div></div>
+                      <div class="col-sm-3"><div class="card__text">1</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Total Weight</div></div>
+                      <div class="col-sm-3"><div class="card__text">400 lbs</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">HazMat</div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <div class="form__group">
+                          <label class="form__checkbox">
+                            <input type="checkbox" class="visually-hidden">
+                            <div class="form__checkbox__text"></div>
+                          </label>
+                        </div>
+                      </div></div>
 
+                      <div class="col-12"><hr></div>
+
+                      <div class="col-sm-3"><div class="card__label">Commodity Descriprion</div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <form class="form__group form-with-btn">
+                          <input type="text" class="form__input">
+                          <button type="submit" class="form__button__icon">
+                            <svg class="icon">
+                              <use xlink:href="images/dest/icons/sprite.svg#search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">NMFC </div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <div class="form__group">
+                          <input type="text" class="form__input">
+                          <label class="form__label">NMFC</label>
+                        </div>
+                      </div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Class</div></div>
+                      <div class="col-sm-3"><div class="card__text">1</div></div>
+
+                      <div class="col-sm-3"><div class="card__label"># of Pieces</div></div>
+                      <div class="col-sm-3"><div class="card__text">1</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Total Weight</div></div>
+                      <div class="col-sm-3"><div class="card__text">400 lbs</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">HazMat</div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <div class="form__group">
+                          <label class="form__checkbox">
+                            <input type="checkbox" class="visually-hidden">
+                            <div class="form__checkbox__text"></div>
+                          </label>
+                        </div>
+                      </div></div>
+
+                      <div class="col-12"><hr></div>
+
+                      <div class="col-sm-4 pb-4">
+                        <div class="form__group">
+                          <select class="form__select">
+                            <option value="one">One</option>
+                            <option value="one">One</option>
+                            <option value="one">One</option>
+                          </select>
+                          <label class="form__label">UN</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 pb-4">
+                        <div class="form__group">
+                          <input type="text" class="form__input">
+                          <label class="form__label">UN Number</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 pb-4">
+                        <div class="form__group">
+                          <input type="text" class="form__input">
+                          <label class="form__label">Proper Shipping Name</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="form__group">
+                          <input type="text" class="form__input">
+                          <label class="form__label">Hazard Class</label>
+                        </div>
+                        <div class="form__tooltip">
+                          <span class="form__tooltip__control" tabindex="0">?</span>
+                          <div class="form__tooltip__body">Some text</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="form__group">
+                          <select class="form__select">
+                            <option value="one">One</option>
+                            <option value="one">One</option>
+                            <option value="one">One</option>
+                          </select>
+                          <label class="form__label">Packing Group</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="form__group">
+                          <select class="form__select">
+                            <option value="one">One</option>
+                            <option value="one">One</option>
+                            <option value="one">One</option>
+                          </select>
+                          <label class="form__label">Packing Type</label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-sm-3"><div class="card__label">Handling Unit Type (H/U)</div></div>
+                      <div class="col-sm-3"><div class="card__text">Pallets</div></div>
+
+                      <div class="col-sm-3"><div class="card__label"># of H/U</div></div>
+                      <div class="col-sm-3"><div class="card__text">3</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">H/U Dimensions</div></div>
+                      <div class="col-sm-3"><div class="card__text">15 х 25 х 23 in</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Stackable</div></div>
+                      <div class="col-sm-3"><div class="card__text">Yes</div></div>
+                      
+                      <div class="col-12"><hr></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Commodity Descriprion</div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <form class="form__group form-with-btn">
+                          <input type="text" class="form__input">
+                          <button type="submit" class="form__button__icon">
+                            <svg class="icon">
+                              <use xlink:href="images/dest/icons/sprite.svg#search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">NMFC </div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <div class="form__group">
+                          <input type="text" class="form__input">
+                          <label class="form__label">NMFC</label>
+                        </div>
+                      </div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Class</div></div>
+                      <div class="col-sm-3"><div class="card__text">1</div></div>
+
+                      <div class="col-sm-3"><div class="card__label"># of Pieces</div></div>
+                      <div class="col-sm-3"><div class="card__text">1</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Total Weight</div></div>
+                      <div class="col-sm-3"><div class="card__text">400 lbs</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">HazMat</div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <div class="form__group">
+                          <label class="form__checkbox">
+                            <input type="checkbox" class="visually-hidden">
+                            <div class="form__checkbox__text"></div>
+                          </label>
+                        </div>
+                      </div></div>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-sm-3"><div class="card__label">Handling Unit Type (H/U)</div></div>
+                      <div class="col-sm-3"><div class="card__text">Pallets</div></div>
+
+                      <div class="col-sm-3"><div class="card__label"># of H/U</div></div>
+                      <div class="col-sm-3"><div class="card__text">3</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">H/U Dimensions</div></div>
+                      <div class="col-sm-3"><div class="card__text">15 х 25 х 23 in</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Stackable</div></div>
+                      <div class="col-sm-3"><div class="card__text">Yes</div></div>
+                      
+                      <div class="col-12"><hr></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Commodity Descriprion</div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <form class="form__group form-with-btn">
+                          <input type="text" class="form__input">
+                          <button type="submit" class="form__button__icon">
+                            <svg class="icon">
+                              <use xlink:href="images/dest/icons/sprite.svg#search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">NMFC </div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <div class="form__group">
+                          <input type="text" class="form__input">
+                          <label class="form__label">NMFC</label>
+                        </div>
+                      </div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Class</div></div>
+                      <div class="col-sm-3"><div class="card__text">1</div></div>
+
+                      <div class="col-sm-3"><div class="card__label"># of Pieces</div></div>
+                      <div class="col-sm-3"><div class="card__text">1</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">Total Weight</div></div>
+                      <div class="col-sm-3"><div class="card__text">400 lbs</div></div>
+                      
+                      <div class="col-sm-3"><div class="card__label">HazMat</div></div>
+                      <div class="col-sm-3"><div class="card__text">
+                        <div class="form__group">
+                          <label class="form__checkbox">
+                            <input type="checkbox" class="visually-hidden">
+                            <div class="form__checkbox__text"></div>
+                          </label>
+                        </div>
+                      </div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shipment__action">
+                <div class="mb-3">
+                  <label class="form__checkbox">
+                    <input type="checkbox" class="visually-hidden">
+                    <div class="form__checkbox__text">I agree to the <a href="google.com" class="link"> Terms and Conditions</a></div>
+                  </label>
+                </div>
+                <a href="#" class="button">dispatch</a>
+              </div>
+            </section>
           </div>
         </div>
       </main>

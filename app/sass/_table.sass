@@ -1,0 +1,38 @@
+table
+  border-bottom: 1px solid map-get($bg-colors, grey-light)
+th
+  padding: 5px 10px 5px 0
+  border-bottom: 1px solid map-get($bg-colors, grey-light)
+  text-align: left
+  +font-size(14)
+  +line-height(20)
+  font-weight: 300
+  color: map-get($text-colors, grey-dark)
+td
+  padding: 10px 10px 20px 0
+  vertical-align: bottom
+  +font-size(16)
+  +line-height(24)
+  font-weight: 300
+  color: map-get($text-colors, grey)
+  &[rowspan]
+    padding-top: 16px
+    vertical-align: top
+
+  &.border-bottom
+    border-bottom: 1px solid map-get($bg-colors, grey-light)
+.elements-wrap
+  display: flex
+  margin: 0 -10px
+  @include screen(xl)
+    flex-wrap: wrap
+.elements-item
+  display: flex
+  align-items: flex-end
+  padding: 0 10px
+  @include screen(xl)
+    flex: 0 0 33.33%
+    margin-bottom: 20px
+  .form__tooltip
+    margin-bottom: -5px
+  

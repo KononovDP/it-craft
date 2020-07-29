@@ -5,13 +5,11 @@
     box-shadow: 0 0 3px 1px map-get($bg-colors, primary)
 
 body
+  min-width: 768px
   font-family: 'Assistant', sans-serif
   +font-size(14)
   +line-height(20)
   color: map-get($text-colors, grey)
-
-h1
-  margin: 35px 0
 
 a
   text-decoration: none
@@ -20,15 +18,15 @@ a
   width: 1rem
   height: 1rem
 
-.hidden
-  display: none!important
-
-.text-overflow
-  display: inline-block
-  width: 100%
-  white-space: nowrap
-  overflow: hidden
-  text-overflow: ellipsis
+.desktop-only
+  display: block
+  @include screen(lg)
+    display: none
+    
+.mobile-only
+  display: none
+  @include screen(lg)
+    display: block
 
 .visually-hidden
   position: absolute
@@ -47,6 +45,13 @@ a
     max-height: 100%
     height: auto
 
+.link
+  text-decoration: underline
+  color: map-get($text-colors, primary)
+  &:hover,
+  &:focus
+    text-decoration: none
+
 .wrapper
   position: relative
   display: flex
@@ -54,7 +59,7 @@ a
   width: 100%
   max-width: 1920px
   min-height: 100vh
-  background: #fff
+  background-color: map-get($bg-colors, white)
   overflow: hidden
 
 .site
@@ -65,3 +70,35 @@ a
 .main
   width: 100%
   padding: 10px
+
+.section
+  &:not(:last-child)
+    margin-bottom: 35px
+  &__title
+    display: inline-block
+    margin-bottom: 20px
+    +font-size(16)
+    +line-height(20)
+    font-weight: 400
+    border-bottom: 1px solid map-get($bg-colors, secondary)
+    color: map-get($text-colors, primary)
+
+.card
+  margin-bottom: 15px
+  padding: 15px
+  border-radius: 5px
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
+  &__label
+    padding: 5px 0
+    color: map-get($text-colors, grey-dark)
+  &__text
+    padding: 5px 0
+
+.shipment
+  &__action
+    display: flex
+    flex-direction: column
+    padding: 20px 0
+    align-items: flex-end
+    @include screen(md)
+      align-items: center
