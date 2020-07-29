@@ -1,5 +1,13 @@
 <h1>IT Craft</h1>
 
+<h2>How to run:</h2>
+
+<ol>
+	<li>Install node.js</li>
+	<li>Run "npm install"</li>
+	<li>Run "gulp"</li>
+</ol>
+
 <h2>Main Gulp tasks:</h2>
 
 <ul>
