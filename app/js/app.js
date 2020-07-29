@@ -14,6 +14,13 @@ $(document).ready(function() {
     }
   });
 
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if(!$target.closest('.dropdown').length) {
+      $('.dropdown').removeClass('dropdown--active');
+    }        
+  });
+
   // SET OFFSETS
   const setOffsets = function() {
     const headerHeight = $('.header').height();
@@ -30,6 +37,13 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).closest('.sidebar').toggleClass('sidebar--active');
   })
+
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if(!$target.closest('.sidebar').length) {
+      $('.sidebar').removeClass('sidebar--active');
+    }        
+  });
 
   // FORM INPUT 
   $('.form__input').keyup(function() {

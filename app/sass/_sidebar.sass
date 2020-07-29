@@ -1,7 +1,7 @@
 .sidebar
   position: fixed
   left: 0
-  width: 160px
+  width: auto
   height: 100%
   background-color: map-get($bg-colors, white)
   box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
@@ -9,6 +9,7 @@
   transition: all .3s
   &__action
     display: flex
+    padding: 2px 0
   &__burger
     position: relative
     display: flex
@@ -19,6 +20,7 @@
     background-color: transparent
     border: none
     cursor: pointer
+    transform: rotate(180deg)
     .icon
       fill: map-get($text-colors, secondary)
   &__link
@@ -40,13 +42,14 @@
     &__icon
       fill: map-get($text-colors, grey)
     &__text
+      display: none
       margin-left: 10px
 
 .sidebar--active
-  width: auto
+  width: 160px
   .sidebar
     &__burger
-      transform: rotate(180deg)
+      transform: rotate(0deg)
     &__link
       &__text
-        display: none
+        display: block
